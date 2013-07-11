@@ -1,0 +1,24 @@
+DirectoryIndex index.php
+
+Options +FollowSymLinks
+Options All -Indexes
+
+AddDefaultCharset utf-8
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule .* - [L]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule .* - [L]
+
+RewriteRule index.html$ index.php [L]
+RewriteRule logowanie.html$ index.php?controller=logowanie [L]
+RewriteRule wyloguj.html$ index.php?controller=logowanie&action=wyloguj [L]
+RewriteRule loguj.html$ index.php?controller=logowanie&action=loguj [L]
+RewriteRule admin.html$ index.php?controller=admin [L]
+RewriteRule admin,pokaz.html$ index.php?controller=admin [L]
+RewriteRule admin,dodaj.html$ index.php?controller=admin&action=dodaj [L]
+RewriteRule admin,zapisz.html$ index.php?controller=admin&action=zapisz [L]
+RewriteRule admin,edytuj,([0-9_-]+).html$ index.php?controller=admin&action=edytuj&id=$1 [L]
+RewriteRule admin,usun,([0-9_-]+).html$ index.php?controller=admin&action=usun&id=$1 [L]

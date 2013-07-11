@@ -1,0 +1,46 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	display: table;
+	width: 300px;
+	margin: 0 auto;
+	
+	font: 12px Verdana, sans-serif;
+}
+
+#wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+
+
+#cell {
+	
+	padding: 1em;
+	color: #000;
+	border: 1px solid rgb(240,240,240);
+	width: 300px;
+}
+
+.error
+{
+    background-color: #fff;
+    color: red;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+    font-family: Monaco, Verdana, Sans-serif;
+    font-size: 12px;
+    
+}
+
+.label {width: 80px;}
+.username_box, .password_box { margin-bottom: 20px; }
+.signin_box {text-align:center; margin-top: 10px; margin-bottom: 10px;}
+.signin_box input { border: 1px solid #55C4FF; font-size: 13px; margin: 0 auto; font-weight: bold; color: #fff; background: #55C4FF; margin: 0 auto; }
+.username_box input {width: 200px; border:1px solid #C6ECFF; color: #777; font-weight: bold; font-size: 12px;}
+.username_box label, .password_box label {float: left; color: #777; font-weight: bold; font-size: 12px; padding-top: 2px;}
+.password_box input {width: 200px; border: 1px solid #C6ECFF; color: #777; font-weight: bold; font-size: 12px;}
